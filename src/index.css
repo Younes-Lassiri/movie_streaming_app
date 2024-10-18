@@ -11,3 +11,36 @@ html
 {
     scroll-behavior: smooth;
 }
+::selection
+{
+    background-color: #de1002;
+    color: #fff;
+}
+.rest-design-fixed-attach
+{
+    width: 100%;
+    background-image: url('./components/app_images/attache_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.rest-design-fixed-attach::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+*::-webkit-scrollbar {
+    width: 17px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #191a1d;
+}
+*::-webkit-scrollbar-track {
+    background: #000000;
+}
