@@ -24,6 +24,7 @@ html
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    border-bottom: 4px solid var(--text-light-red);
 }
 .rest-design-fixed-attach::before {
     content: '';

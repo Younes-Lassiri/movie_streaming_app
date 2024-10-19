@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -13,7 +13,12 @@ import movie_eight from './app_images/movie_eight.jpg';
 import movie_ten from './app_images/movie_ten.jpg';
 import movie_eleven from './app_images/movie_eleven.jpg';
 import movie_twelve from './app_images/movie_twelve.jpg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function Movie() {
+    useEffect(() => {
+      AOS.init({ duration: 1000 });
+    }, []);
     var settings = {
         dots: true,
         infinite: true,
@@ -108,7 +113,7 @@ export default function Movie() {
                 <div className="main-movie-section-one-two">
                 <Slider {...settings}>
                 {movies.map(movie => (
-                <div key={movie.id} className="main-movie-section-one-two-item">
+                <div key={movie.id} className="main-movie-section-one-two-item" data-aos="zoom-in">
                     <div className="main-movie-section-one-two-item-image">
                         <div className="main-movie-section-one-two-item-image-play">
                             <div className="main-movie-section-one-two-item-image-play-main">
