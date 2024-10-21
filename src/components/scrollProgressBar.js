@@ -26,7 +26,7 @@ export default function ScrollProgressBar() {
         width: `${scrollProgress}%`,
         height: '3px',
         background: 'linear-gradient(90deg, #ff0000 0%, #ff9a00 10%, #d0de21 20%, #4fdc4a 30%, #3fdad8 40%, #2fc9e2 50%, #1c7fee 60%, #5f15f2 70%, #ba0cf8 80%, #fb07d9 90%, #ff0000 100%)',
-        zIndex: 1000,
+        zIndex: 9999,
         boxShadow: '0px 3px 5px 0px rgb(0 0 0 / 10%)'
       }}
     />

@@ -22,6 +22,28 @@
     height: 80px;
     background-color: var(--primary-color);
 }
+.main-navbar-section-navbar-scrolling
+{
+    width: 100%;
+    height: 80px;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9000;
+    animation: showScrollingNav 0.4s;
+}
+@keyframes showScrollingNav {
+    from
+    {
+        transform: translateY(-100%);
+    }
+    to
+    {
+        transform: translateY(0);
+    }
+}
 .main-navbar-section-navbar-mobile
 {
     width: 100%;
@@ -33,7 +55,7 @@
     height: 100%;
     margin: 0 auto;
 }
-.main-navbar-section-navbar-main-mobile ul
+.-navbar-main-mobile ul
 {
     display: flex;
     flex-direction: column;
@@ -657,6 +679,19 @@
     color: white;
     width: 44px;
     height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+.main-landing-section .slick-next {
+    border: 2px solid rgba(255, 255, 255, 0.4) !important;
+    border-radius: 50%;
+    color: white;
+    width: 44px !important;
+    height: 44px !important;
     display: flex;
     align-items: center;
     justify-content: center;

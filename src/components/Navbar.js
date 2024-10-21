@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import '../components/main.css';
 import logo from '../components/app_images/app_logo.png';
+import useScrollStatus from "./userScrollStatus";
 export default function Navbar() {
+    const isScrolling = useScrollStatus(50);
     const [isFocused, setIsFocused] = useState(false);
     const [isClicked, setIsClicked] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
@@ -43,7 +45,7 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
-        <div className="main-navbar-section-navbar">
+        <div className={isScrolling? "main-navbar-section-navbar-scrolling": "main-navbar-section-navbar"}>
             <div className="main-navbar-section-navbar-main">
                 <ul>
                     <li className="active-list-item">
