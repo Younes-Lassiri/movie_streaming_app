@@ -2020,7 +2020,8 @@
 {
     width: 23px;
     height: 23px;
-    background-color: #595c67;
+    background-color: #202022;
+    z-index: 3;
     border-radius: 3px;
 }
 .main-streaming-section-two .slick-dots
@@ -2314,7 +2315,7 @@
     }
     .main-streaming-section-two-slider
     {
-        padding: 10px 0;
+        padding: 20px 0;
     }
     .main-streaming-section-two-slider-divs
     {
@@ -2322,7 +2323,7 @@
     }
     .main-streaming-section-two
     {
-        padding: 15px 0;
+        padding: 20px 0;
     }
     .main-streaming-section-one
     {

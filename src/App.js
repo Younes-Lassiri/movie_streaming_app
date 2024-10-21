@@ -5,11 +5,13 @@ import Landing from './components/Landing';
 import Movie from './components/Movie';
 import Navbar from './components/Navbar';
 import Playlist from './components/playlist';
+import ScrollProgressBar from './components/scrollProgressBar';
 import Streaming from './components/streaming';
 import Trending from './components/Trending';
 function App() {
   return (
-    <div>
+    <div className='overflow-x'>
+      <ScrollProgressBar/>
       <Navbar/>
       <Landing/>
       <Movie/>

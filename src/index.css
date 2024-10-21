@@ -7,6 +7,10 @@ body
 {
     overflow-x: hidden;
 }
+.overflow-x
+{
+    overflow-x: hidden;
+}
 html
 {
     scroll-behavior: smooth;
