@@ -19,7 +19,7 @@ export default function Navbar() {
     }, []);
     return(
         <div>
-            <div className="main-navbar-section">
+            <div className={isScrolling? "main-navbar-section-scrolling": "main-navbar-section"}>
                 <div className="main-navbar-section-one"><img src={logo}/></div>
                 <div className="main-navbar-section-two">
                     <div className={isFocused? "main-navbar-section-two-one input-focused" : "main-navbar-section-two-one"}>
@@ -130,7 +130,7 @@ export default function Navbar() {
         </div>
         {
             isClicked & isMobile? (
-                <div className="main-navbar-section-navbar-mobile">
+                <div className={isScrolling? "main-navbar-section-navbar-mobile-scrolling": "main-navbar-section-navbar-mobile"}>
                     <div className="main-navbar-section-navbar-main-mobile">
                         <ul>
                             <li>

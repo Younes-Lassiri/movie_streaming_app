@@ -63,7 +63,7 @@ export default function Streaming() {
             <div className="main-streaming-section-one">
                 <div className="main-movie-section-one-one">
                     <h1>
-                    <box-icon name='movie-play' color='#de1002' ></box-icon>Movie <span>Streaming Services</span>
+                    <box-icon name='movie-play' color='#de1002' ></box-icon>Movie <span>Streaming</span>
                     </h1>
                     <button>View All</button>
                 </div>
